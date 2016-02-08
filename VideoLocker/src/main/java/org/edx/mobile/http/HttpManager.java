@@ -221,18 +221,18 @@ public class HttpManager {
             post = new HttpPost(url);
         }
         AndroidHttpClient.modifyRequestToAcceptGzipResponse(post);
-
+        post.setHeader("Content-Type", "application/json");
         // set request headers
         if (headers != null) {
             for (String key : headers.keySet()) {
                 post.addHeader(key, headers.getString(key));
             }
         }
-
+/* EGOR
         StringEntity se = new StringEntity(postBody);
         se.setContentEncoding(new BasicHeader(HTTP.CONTENT_TYPE, "application/json"));
         post.setEntity(se);
-
+*/
         HttpResponse response = client.execute(post);
         int statusCode = response.getStatusLine().getStatusCode();
         //make this change to handle it consistent with iOS app
