@@ -15,6 +15,9 @@ public class TranscriptModel implements Serializable{
     @SerializedName("en")
     public String englishUrl;
 
+    @SerializedName("ru")
+    public String russianUrl;
+
     @SerializedName("es")
     public String spanishUrl;
 
@@ -56,7 +59,10 @@ public class TranscriptModel implements Serializable{
             languageArray.put(context.getString(R.string.cc_spanish_code), 
                     context.getString(R.string.lbl_cc_spanish));
         }
-        
+        if(russianUrl!=null){
+            languageArray.put(context.getString(R.string.cc_russian_code), 
+                    context.getString(R.string.lbl_cc_russian));
+        }
         if(languageArray.size()>0){
             return languageArray;
         }else{

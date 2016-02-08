@@ -273,6 +273,11 @@ public class TranscriptManager {
                         fetchTranscriptResponse(transcript.portugueseUrl));
             }
 
+            if(transcript.russianUrl!=null){
+                transcriptList.put(context.getString(R.string.cc_russian_code), 
+                        fetchTranscriptResponse(transcript.russianUrl));
+            }
+
             if(transcript.spanishUrl!=null){
                 transcriptList.put(context.getString(R.string.cc_spanish_code), 
                         fetchTranscriptResponse(transcript.spanishUrl));
