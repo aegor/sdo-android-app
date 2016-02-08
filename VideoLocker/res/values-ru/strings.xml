@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Button to visit course group on facebook-->
+  <string name="course_details_fb_group">Официальная группа курса на Facebook</string>
+  <!--Button to view handouts for course-->
+  <string name="view_handouts">Просмотреть материалы</string>
+  <!--Label for list of friends enrolled in a course-->
+  <string name="course_details_friends_in_course">Друзья, подписанные на этот курс</string>
+  <!--Button for sharing a link to the course-->
+  <string name="course_details_share">Поделиться</string>
+  <!--Label congratulation user on finishing course-->
+  <string name="course_details_congratulations">Поздравляем!</string>
+  <!--Message for user who has successfully completed a certificate course-->
+  <string name="course_details_earned_cert">Вы заработали сертификат</string>
+  <!--Header for list of friends in a given course. Argument is a course name-->
+  <string name="friends_in_course">Друзья, подписанные на курс %1$s</string>
+  <!--Link to web course page-->
+  <string name="open_course_page">Открыть страницу курса</string>
+  <!--Title of friends in course screen-->
+  <string name="friends_in_this_course">Друзья, подписанные на этот курс</string>
+  <string name="share_application_title">{platform_name} на Android</string>
+  <string name="share_application_link_url">http://www.edx.org</string>
+  <string name="share_application_picture_url">https://www.edx.org/sites/default/files/theme/edx-logo-header.png</string>
+  <string name="share_application_description">Бесплатные курсы онлайн</string>
+  <string name="share_course_message">Я завёл курс на {platform_name}! Заходите:</string>
+  <string name="share_certificate_message">Я подписался на сертификат {platform_name}! Заходите: {certificate_url}</string>
+  <!--Settings Page-->
+  <!--Label for wifi only switch-->
+  <string name="settings_wifi_top">Скачивание только через Wi-Fi соединение</string>
+  <!--Label explaining what wifi only means in detail-->
+  <string name="settings_wifi_bottom">Скачивать файлы только при включенном Wi-Fi соединении</string>
+  <!--Label explaining switch allowing other users to see courses-->
+  <string name="settings_make_courses_visible_top">Курсы видимы для друзей</string>
+  <!--Label explaining switch allowing other users to see courses-->
+  <string name="settings_make_courses_visible_bottom">Разрешить друзьям видеть курсы, на которые я подписан</string>
+  <!--Label for facebook login section-->
+  <string name="settings_facebook_login">Войти через Facebook</string>
+  <!--Label for facebook login section. Argument is a user name-->
+  <string name="settings_facebook_login_body_logged_in">Выполнен вход как %s</string>
+  <!--Label for button allowing user to connect a facebook account-->
+  <string name="settings_facebook_login_body_logged_out">Войти с помощью аккаунта Facebook</string>
+  <!--Error shown attempting to connect a facebook accoutn fails-->
+  <string name="settings_facebook_login_error">Не удается подключиться к Facebook</string>
+  <!--Status label shown when connecting to facebook-->
+  <string name="settings_facebook_login_fetch">Подключение к Facebook...</string>
+  <!--Button for connecting a user to their facebook account-->
+  <string name="settings_facebook_login_btn">Войти</string>
+  <!--Button for disconnecting a user from their facebook account-->
+  <string name="settings_facebook_logout_btn">Выйти</string>
+  <!--Certificate Page-->
+
+  <!--Tab of tab for certicate for finished course-->
+  <string name="tab_label_certificate">Сертификат</string>
+  <!--Groups Page-->
+  <!--Label on cell in list of groups. Argument is number of members-->
+  <string name="group_list_members">Участники %1$s</string>
+  <!--Data Usage Dialog-->
+  <!--Alert dialog error message shown when using a feature with a required internet connection-->
+  <string name="need_data">Эта функция требует активного подлючения к Интернету</string>
+
+
+  <!--Login Activity Place Holders-->
+  <!--Hint text for login field-->
+  <string name="email_username">Логин или E-mail адрес</string>
+  <!--Hint text for email address field in reset password dialog-->
+  <string name="email">E-mail адрес</string>
+  <!--Hint text for password field-->
+  <string name="password">Пароль</string>
+  <!--Button text allowing user to reset their password-->
+  <string name="forgot_password">Забыли пароль?</string>
+  <!--Button initiating login process after user enters credentials like username and password-->
+  <string name="login">Войти</string>
+  <!--Message shown while waiting for action-->
+  <string name="progressText">Подождите...</string>
+  <!--Message shown while user waits for response to a sign in request-->
+  <string name="signing_in">Вход в систему...</string>
+  <!--Message for shown after tapping Sign In-->
+  <string name="error_message">Сообщение об ошибке</string>
+  <!--Generic error during log in-->
+  <string name="error_heading">Следующая ошибка произошла во время входа</string>
+  <!--Error during log in.-->
+  <string name="login_failed">Убедитесь в правильности Вашего имени пользователя или адреса электронной почты и повторите попытку.</string>
+  <!--Error logging in without activating account.-->
+  <string name="login_failed_no_grant">Этот аккаунт не был активирован. Проверьте Ваш e-mail для получения инструкций по активации.</string>
+  <!--Button text allowing a user to go to the register screen-->
+  <string name="new_user">Нужен аккаунт?</string>
+  <string name="by_signing_up">Подписываясь на это приложение, Вы даете согласие на...</string>
+  <string name="licensing_agreement">Условия предоставления услуг {platform_name} и Кодекс Чести</string>
+  <string name="login_title">Войти на {platform_name}</string>
+  <!--Navigation Drawer Labels-->
+  <!--Button text to show user Settings screen-->
+  <string name="action_settings">Настройки</string>
+  <!--Title of user's course list screen-->
+  <string name="label_my_courses">Мои курсы</string>
+  <!--Title of user's downloaded videos list screen-->
+  <string name="label_my_videos">Мои видео</string>
+  <!--Title of Find Courses screen-->
+  <string name="label_find_courses">Искать курсы</string>
+  <!--Title of Study Groups screen-->
+  <string name="label_my_groups">Мои Учебные Группы</string>
+  <!--Button allowing users to send an email for feedback-->
+  <string name="label_submit_feedback">Отправить отзыв</string>
+  <!--Toggle switch on state label-->
+  <string name="toggle_turn_on">ВКЛ</string>
+  <!--Toggle switch off state label-->
+  <string name="toggle_turn_off">ВЫКЛ</string>
+  <!--Logout button label-->
+  <string name="logout">Выйти</string>
+  <!--Settings screen title-->
+  <string name="settings_txt">Настройки</string>
+  <!--Settings screen title-->
+  <string name="label_version">Версия</string>
+  <!--Button text to show user Settings screen-->
+  <string name="label_settings">Мои настройки</string>
+  <!--Help Dialog Place Holder messages-->
+  <!--Reset password alert dialog title-->
+  <string name="confirm_dialog_title_help">Восстановление пароля</string>
+  <!--Reset password alert dialog message-->
+  <string name="success_dialog_title_help">Сообщение для восстановления пароля отправлено на E-mail адрес</string>
+  <!--Reset password alert dialog title-->
+  <string name="title_reset_password_failed">Ошибка восстановления пароля</string>
+  <!--Label for switch controlling whether users permit downloading using cellular data or only wifi-->
+  <string name="wifi_dialog_title_help">Разрешить скачивание через мобильное соединение</string>
+  <!--Password reset sent succesfully alert-->
+  <string name="success_dialog_message_help">Инструкции по восстановлению пароля отправлены на Ваш E-mail адрес.
+
+Если сообщение не придет через несколько минут, проверьте папку со спамом.</string>
+  <!--Password reset dialog prompt-->
+  <string name="confirm_dialog_message_help">Введите Ваш адрес электронной почты, и мы отправим на него инструкции по восстановлению пароля.</string>
+  <!--Label explaining toggle for cellular data access-->
+  <string name="wifi_dialog_message_help">Разрешить устройству скачивать видео через мобильное соединение, когда Wi-Fi соединение недоступно. Может взиматься дополнительная плата за передачу данных.</string>
+  <!--Confirmation text for delete video dialog-->
+  <string name="delete_dialog_title_help">Подтвердить удаление</string>
+  <plurals name="delete_video_dialog_msg">
+    <item quantity="one">Вы уверены, что хотите удалить эти видео?</item>
+    <item quantity="few">Вы уверены, что хотите удалить эти видео?</item>
+    <item quantity="many">Вы уверены, что хотите удалить эти видео?</item>
+    <item quantity="other">Вы уверены, что хотите удалить эти видео?</item>
+  </plurals>
+  <!--Alert dialog button label-->
+  <string name="delete_successful_dialog_title_help">Удалить</string>
+  <!--Alert dialog title for users with zero rated data-->
+  <string name="leaving_app_data_title">Выход из приложения {platform_name}</string>
+  <!--Alert dialog content for users with zero rated data-->
+  <string name="leaving_app_data_message">Покидая это приложение, Вы больше не сможете просмотреть бесплатный контент {platform_name}. Может взиматься дополнительная плата за передачу данных.</string>
+  <!--Reset Dialog Fragment Place Holder messages-->
+  <string name="reset_dialog_title">Сбросить название</string>
+  <!--Title of agreement users must accept to use the app-->
+  <string name="end_user_title">Лицензионное соглашение конечного пользователя</string>
+  <!--My Courses-->
+
+  <!--Accessible content description of school code label a course-->
+  <string name="school_code">Кодекс Школы</string>
+  <!--Accessible content description of course code label for a course-->
+  <string name="course_code">Кодекс Курса</string>
+  <!--Accessible content description of course name label field-->
+  <string name="course_name">Название курса</string>
+  <!--Label indicating new course content has been downloaded-->
+  <string name="new_course_content">Новый контент курса</string>
+
+  <!--Label for course that has ended-->
+  <string name="label_ended">Окончен</string>
+
+  <!--List for table listing courses friends are in-->
+  <string name="label_my_friends_courses">Курсы моих друзей</string>
+
+  <!--Header ror list of users' friends enrolled in a course-->
+  <string name="course_friends_also_enrolled">Друзья, подписанные на этот курс</string>
+  <!--Course Details-->
+  <!--Accessible content description of label for course content-->
+  <string name="course_content">Содержание курса</string>
+  <!--Accessible content description of label for course name-->
+  <string name="chapter_name">Название курса</string>
+  <!--Tab title for courseware section-->
+  <string name="tab_label_courseware">Программа обучения</string>
+  <!--Tab title for course announcements section-->
+  <string name="tab_label_announcement">Объявления</string>
+  <!--Tab title for course handouts section-->
+  <string name="tab_label_handouts">Раздаточный материал</string>
+  <!--Tab title for course info section-->
+  <string name="tab_label_course_info">Информация о курсе</string>
+  <!--Button for last accessed course section. Will be followed by course name-->
+  <string name="last_accessed">Последнее посещение - </string>
+  <!--Label shown when no courseware content is available-->
+  <string name="no_chapter_text">На данный момент нет доступных программ обучения.</string>
+  <!--Label shown when user is enrolled in no courses-->
+  <string name="no_courses_to_display">Вы не зарегистрированы на какой-либо курс</string>
+  <!--Label shown when no announcements are available for a course-->
+  <string name="no_announcements_to_display">На данный момент на этом курсе нет объявлений.</string>
+  <!--Label shown when no handouts are available for a course-->
+  <string name="no_handouts_to_display">На данный момент на этом курсе нет материалов.</string>
+  <!--Label shown when there is no course information available for a course-->
+  <string name="no_information_to_display">Дополнительная информация на данный момент недоступна</string>
+  <!--Video List-->
+  <!--Label shown to indicate video currently downloading-->
+  <string name="started_downloading">Идет скачивание</string>
+  <!--Title of video download screen-->
+  <string name="title_download">Загрузки</string>
+  <!--MyVideos-->
+  <!--Title of all videos section-->
+  <string name="my_all_videos">Все видео</string>
+  <!--Title of recent videos section-->
+  <string name="my_recent_videos">Недавние видео</string>
+  <!--Label indicating user has no internet connection-->
+  <string name="offline_text">Режим офлайн</string>
+  <!--Label shown in videos section when user has no videos downloaded-->
+  <string name="no_videos_to_display">Вы не скачали ни одного видео.</string>
+  <!--My Downloads-->
+  <!--Message indicating videos downloaded-->
+  <plurals name="text_download_msg">
+    <item quantity="one">Видео загружено </item>
+    <item quantity="few">Несколько видео загружены</item>
+    <item quantity="many">Много видео загружено</item>
+    <item quantity="other">Скачанные видео</item>
+  </plurals>
+  <!--Button action label to view an item-->
+  <string name="view_button_text">Просмотреть</string>
+  <!--Error text when downloading an item fails-->
+  <string name="download_failed_text">Скачать не удалось</string>
+  <!--Message indicating a number of videos has begun. Argument is a number-->
+  <plurals name="downloading_count_videos">
+    <item quantity="one">Загружается %1$d видео.</item>
+    <item quantity="few">Загружается %1$d видео.</item>
+    <item quantity="many">Загружается %1$d видео.</item>
+    <item quantity="other">Скачивается %1$d видео.</item>
+  </plurals>
+  <!--Alert dialog title to confirm download of a large quantity of data-->
+  <string name="download_exceed_title">Крупная загрузка</string>
+  <!--Alert dialog text at end of video-->
+  <string name="title_lecture_complete">Конец видео.</string>
+  <!--Alert dialog prompt at end of video.-->
+  <string name="msg_lecture_complete">Хотите посмотреть следующее видео?</string>
+  <!--Message shown a single video download begins-->
+  <string name="msg_started_one_video_download">Загружается 1 видео.</string>
+  <!--Error shown when video download fails-->
+  <string name="msg_video_not_downloaded">Невозможно скачать видео.</string>
+  <!--Error shown when video download fails-->
+  <string name="msg_video_not_available">Это видео сейчас недоступно. \nПопробуйте позже.</string>
+  <!--Alert dialog title when login fails-->
+  <string name="login_error">Ошибка входа</string>
+  <!--Alert dialog title when login fails due to lack of internet-->
+  <string name="no_connectivity">Ошибка соединения</string>
+
+  <!--Wifi New Message-->
+  <!--Toggle to allow downloads using cellular data-->
+  <string name="allow">Разрешить</string>
+  <!--Toggle to disallow downloads using cellular data-->
+  <string name="do_not_allow">Не разрешать</string>
+  <!--Player Settings-->
+  <!--Label for closed captions in video player-->
+  <string name="lbl_closed_caption">Субтитры</string>
+  <!--Label for speed in video player-->
+  <string name="lbl_video_speed">Скорость видео</string>
+  <!--Label for no closed captions selected-->
+  <string name="lbl_cc_cancel">Нет</string>
+  <!--My Group Strings-->
+  <!--Label for group name field in study group creation screen-->
+  <string name="header_group_name">Название группы</string>
+  <!--Hint text for group name field in study group creation screen-->
+  <string name="hint_group_name">Введите название группы</string>
+  <!--Label for description field in study group creation screen-->
+  <string name="header_group_desc">Описание группы (необязательно)</string>
+  <!--Hint text for description field in study group creation screen-->
+  <string name="hint_group_desc">Введите описание группы</string>
+  <!--Disclaimer message shown when creating a new study group-->
+  <string name="create_group_disclaimer">При создании группы {platform_name}, автоматически создается группа Facebook. Обсуждения внутри нее доступны только участникам группы.</string>
+  <!--Next button for creating a study group-->
+  <string name="create_group_next">Далее</string>
+  <!--Label indicating social feature provider (like facebook) username when creating a study group-->
+  <string name="connected_as">Подключен как %1$s</string>
+  <!--Button allowing a user to open a study group from within facebook-->
+  <string name="open_study_group">Открыть учебную группу на Facebook</string>
+  <!--Group creation and management-->
+  <!--Title for create study group screen-->
+  <string name="label_new_group">Создать учебную группу</string>
+  <!--Title for view allowing a user to add members to a new study group-->
+  <string name="label_add_group_friends">Добавить участников</string>
+  <!--Title for view allowing a user to add members to an existing study group-->
+  <string name="label_add_new_group_friends">Добавить новых участников</string>
+  <!--Button title for action that allows users to share this app-->
+  <string name="button_share_app">Поделиться приложением с друзьями</string>
+  <!--Alert dialog title for unknown type of error-->
+  <string name="error_unknown">Неизвестная ошибка</string>
+  <!--Alert dialog error shown when inviting a user to a study group fails-->
+  <string name="error_group_invite">Ошибка при приглашении пользователя %1$s в группу</string>
+  <!--Error message shown accessing Facebook-->
+  <string name="error_contact_FB">Ошибка подключения к Facebook</string>
+  <string name="friends_with_platform_accounts">Друзья, имеющие эккаунт на {platform_name}</string>
+  <!--Error message shown when loading a users friends from a social provider (like facebook) failes-->
+  <string name="error_friends_list">Ошибка при получении списка друзей</string>
+  <!--Error message shown when attempting to use Facebook enabled features without connecting a facebook account-->
+  <string name="error_no_fb">Ошибка: не подключен аккаунт Facebook</string>
+  <!--Error message shown when attempting to invite friends to a study group, but user has no facebook friends-->
+  <string name="error_no_friends_connected">Никто из Ваших друзей из сети Facebook не подсоединен к {platform_name}</string>
+  <!--Header on study groups screen encouraging users to create a group-->
+  <string name="empty_groups_header">Одна голова хорошо, а две - лучше</string>
+  <!--Message on study groups screen encouraging users to create a group-->
+  <string name="empty_groups_msg">Создайте с друзьями учебную группу, чтобы оставаться мотивированными к учебе и покорять новые курсы!</string>
+  <!--Message on study groups screen indicating requirement-->
+  <string name="empty_groups_msg2">Для использования данной функции необходимо подключить аккаунт Facebook</string>
+  <!--Message shown after creating a study group-->
+  <string name="group_created">Созданная группа</string>
+  <!--Message shown after inviting friends to a study group-->
+  <string name="friends_invited">Приглашенные друзья</string>
+  <!--Button title for action that allows users to share this app-->
+  <string name="btn_share_app">Расскажи друзьям об {platform_name}</string>
+
+  <!--Header for friends search-->
+  <string name="search_results">Результаты поиска</string>
+  <!--Button allowing a user to search for friends-->
+  <string name="friends_search">Поиск</string>
+  <!--Button text to complete an action-->
+  <string name="done_text">Готово</string>
+  <!--Label indicating unread actions. Argument is a count-->
+  <string name="unread_text">%s непрочитанных</string>
+  <!--Label indicating number of members in a study group Argument is a count-->
+  <string name="group_summary_count">Участники группы (%1$s)</string>
+  <!--Label indicating a user has no friends in a study group-->
+  <string name="group_summary_no_friends">У вас нет друзей в этой группе</string>
+  <!--Alert dialog title when a user without facebook performs an action that requires Facebook-->
+  <string name="dialog_fbinstall_title">Требуется Facebook</string>
+  <!--Alert dialog message when a user without facebook performs an action that requires Facebook-->
+  <string name="dialog_fbinstall_msg">Эта функция требует установленного приложения Facebook</string>
+  <!--Alert dialog button action to open up the google play store-->
+  <string name="dialog_fbinstall_positive">Показать в Google Play</string>
+  <!--My Groups-->
+  <!--Button label to bring up course finder-->
+  <string name="find_course_text">Ищете что-то новое и интересное?</string>
+  <!--Button label to bring up course finder-->
+  <string name="find_course_btn_text">Найти курс, совместимый с мобильными устройствами</string>
+  <!--Message between sign in button and social login buttons-->
+  <string name="signin_with_text">Или Войти в аккаунт</string>
+  <!--Facebook login method-->
+  <string name="facebook_text">Facebook</string>
+  <!--Google login method-->
+  <string name="google_text">Google</string>
+  <!--Message on course list-->
+  <string name="course_not_listed_text">Не видете какой-либо из Ваших курсов?</string>
+  <!--Message on course page for course that hasn't started-->
+  <string name="course_content_available_text">Этот курс пока не начался. Вы можете вернуться %s для просмотра своих видео.</string>
+
+   <!--Title of find course screen-->
+  <string name="find_courses_title">Искать курсы</string>
+  <!--Message shown when attempting to find courses with no internet connection-->
+  <string name="find_courses_offline_text">Вы в режиме оффлайн. \nЧтобы найти курсы, подключитесь к Интернету.</string>
+  <!--Prompt allowing user to choose email program-->
+  <string name="email_chooser_header">Отправить E-mail, используя...</string>
+  <!--Error shown when user attempts to send email, but has no email app-->
+  <string name="email_client_not_present">Нет установленных E-mail клиентов</string>
+  <!--Landing Activity text-->
+  <!--Prompt leading user to sign in screen-->
+  <string name="already_have_an_account">Уже есть аккаунт? Войти</string>
+  <!--Prompt leading user to create account screen-->
+  <string name="sign_up_and_learn">Войти и начать обучение</string>
+  <!--Registration Screen-->
+  <!--Create account agreement. Followed by list of agreement names like "End User License Agreement"-->
+  <string name="by_creating_account">Создавая аккаунт в системе {platform_name}, Вы даёте согласие на</string>
+  <!--Button text allowing user to show hidden optional registration fields-->
+  <string name="show_optional_text">Показать необязательные поля</string>
+  <!--Button text allowing user to hide visible optional registration fields-->
+  <string name="hide_optional_text">Скрыть необязательные поля</string>
+  <!--Button text allowing user create an account-->
+  <string name="create_account_text">Создать аккаунт</string>
+  <!--Text shown while waiting for registration request-->
+  <string name="creating_account_text">Создается аккаунт...</string>
+  <!--Registration screen title-->
+  <string name="register_title">Войти в {platform_name}</string>
+  <!--Message shown when enrolling in a course fails-->
+  <string name="enrollment_failure">Сейчас мы не можем записать Вас на этот курс.</string>
+  <!--Alert dialog button allowing user to repeat their attempted action-->
+  <string name="try_again">Попробовать еще раз</string>
+  <!--Floating overlay text shown to user when they succeed at enrolling in a course-->
+  <string name="you_are_now_enrolled">Вы подписались на этот курс</string>
+  <!--Error shown user attempts to enroll in a course they are already enrolled in-->
+  <string name="already_enrolled">Вы уже подписались на этот курс</string>
+  <!--Error shown when registering an account fails-->
+  <string name="sign_up_error">Невозможно создать аккаунт. Попробуйте позднее.</string>
+  <!--data charges may apply dialog text-->
+  <!--Alert dialog title shown for users whose in app data is zero rated, when they follow a link outside the app-->
+  <string name="open_external_url_title">Может взиматься дополнительная плата</string>
+  <!--Alert dialog content shown for users whose in app data is zero rated, when they follow a link outside the app-->
+  <string name="open_external_url_desc">Ссылка откроется в мобильном браузере. Может взиматься дополнительная плата за передачу данных.</string>
+  <!--Message shown when user tries to view course handouts, but none are loaded and the user is offline-->
+  <string name="offline_handouts_text">Вы в режиме офлайн. Чтобы просматривать материалы курса, подключитесь к Интернету.</string>
+  <string name="android">Android</string>
+  <!--Email subject line when user attempts to submit feedback about the app-->
+  <string name="email_subject">Отзывы клиентов</string>
+<string name="assessment_previous">Предыдущий</string>
+<string name="assessment_previous_unit">Предыдущий</string>
+<string name="assessment_next">Следующий</string>
+<string name="assessment_next_unit">Следующий</string>
+<string name="edit_user_profile_photo_crop_title">Сжать и обрезать</string>
+<string name="edit_user_profile_photo_crop_cancel">Отменить</string>
+<string name="edit_user_profile_photo_crop_save">Выберите</string>
+<string name="login_btn">Зарегистрироваться</string>
+<string name="sign_up_with">Войти</string>
+<string name="or_sign_up_with_email">с помощью e-mail</string>
+<string name="create_account_btn">Создать учётную запись</string>
+<string name="forum_follow">Отслеживать</string>
+<string name="discussion_responses_report_label">Report</string>
+<string name="discussion_responses_answer">Ответить</string>
+<string name="discussion_add_comment_hint">Комментировать</string>
+<string name="discussion_add_comment_button_description">Комментировать</string>
+<string name="discussion_add_comment_button_label">Комментировать</string>
+<string name="discussion_title">Обсуждение</string>
+<string name="discussion_question">Вопрос</string>
+<string name="discussion_post_title">Заголовок</string>
+<string name="discussion_add_response_hint">Ответить</string>
+<string name="discussion_add_response_button_description">Ответить</string>
+<string name="discussion_add_response_button_label">Ответить</string>
+<string name="notification_toggle">Уведомлять о новых</string>
+<string name="share_course_button">Поделиться курсом</string>
+<string name="assessment_empty">Похоже, здесь ничего нет.</string>
+<string name="assessment_explore_on_web">Изучите другие разделы или просмотрите в браузере.</string>
+<string name="assessment_view_on_web">Открыть в браузере</string>
+<string name="video_player">Видеоплеер</string>
+<string name="assessment_rotate_for_fullscreen">Поверните, чтобы увидеть на полный экран.</string>
+<string name="discussion_posts_refine">Уточнить:</string>
+<string name="edit_user_profile_change_photo">Изменить</string>
+<string name="edit_user_profile_textarea_submit_button">Сохранить</string>
+<string name="profile_consent_needed_explanation">Вы должны быть старше 13 лет, чтобы открыть профиль.</string>
+<string name="profile_consent_needed_edit_button">Настройки профиля</string>
+<string name="profile_incomplete_explanation">Пожоже, здесь ничего нет. Пора заполнить ваш профиль.</string>
+<string name="profile_incomplete_edit_button">Начать</string>
+<string name="profile_incomplete_about_me">Напишите что-нибудь “О себе”.</string>
+<string name="close">Закрыть</string>
+<string name="course_not_listed_btn">Нет курсов</string>
+<string name="video_only_on_web_label">Это видео доступно только через веб. Нажмите, чтобы посмотреть.</string>
+<string name="video_player_share">Поделиться</string>
+<string name="video_player_view_on_web">Открыть в браузере</string>
+<string name="video_player_rewind">Перемотать</string>
+<string name="video_player_settings">Настройки</string>
+<string name="video_player_enter_fullscreen">Полный экран</string>
+<string name="video_player_pause">Пауза</string>
+<string name="video_player_previous">Предудущее</string>
+<string name="video_player_next">Следующее</string>
+<string name="course_details_view_cert_button">Посмотреть сертификат</string>
+<string name="or_sign_in_with">Или войти с помощью</string>
+<string name="course_view_modes">Режим просмотра</string>
+<string name="course_view_mode_videos_only">только видео</string>
+<string name="course_view_mode_full_course">полный курс</string>
+<string name="edit_user_profile_take_photo">Сфотографироваться</string>
+<string name="edit_user_profile_choose_photo">Выбрать фото</string>
+<string name="edit_user_profile_remove_photo">Удалить фото</string>
+<string name="course_change_mode">Выбор режима</string>
+<string name="course_view_on_web">Открыть в браузере</string>
+<string name="profile_toolbar_edit_button">Редактировать</string>
+<string name="share_certificate_button">Поделиться сертификатом</string>
+<string name="video_only_on_web_short">Это видео недоступно на мобильных платформах, пожалуйста, попробуйте посмотреть его в веб</string>
+<string name="assessment_not_available">Этот интерактивный компонент недоступен на мобильных платформах, попробуйте посмотреть его в веб</string>
+  <string name="courseware_title">Содержание</string>
+  <string name="handouts_title">Дополнительные материалы</string>
+  <string name="announcement_title">Новости и анонсы</string>
+  <string name="courseware_subtitle">Доступ к видео и заданиям курса</string>
+  <string name="handouts_subtitle">Учебники и раздаточные материалы</string>
+  <string name="announcement_subtitle">Оставайтесь в курсе последних событий</string>
+</resources>
