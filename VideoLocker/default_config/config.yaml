@@ -1,8 +1,8 @@
-API_HOST_URL: 'http://10.0.2.2:8000' # localhost is 10.0.2.2 in Android
-ENVIRONMENT_DISPLAY_NAME: 'Localhost'
-PLATFORM_NAME: 'Your platform name here'
-PLATFORM_DESTINATION_NAME: 'example.com'
-FEEDBACK_EMAIL_ADDRESS: 'support@example.com'
+API_HOST_URL: 'http://api.edu-kuban.ru'
+ENVIRONMENT_DISPLAY_NAME: 'edu-kuban.ru'
+PLATFORM_NAME: 'СДО Кубани'
+PLATFORM_DESTINATION_NAME: 'cms.edu-kuban.ru'
+FEEDBACK_EMAIL_ADDRESS: 'egor@akulovs.com'
 COURSE_ENROLLMENT:
-    ENABLED: false
-    EXTERNAL_COURSE_SEARCH_URL: 'http://10.0.2.2:8000/courses'
+    ENABLED: true
+    EXTERNAL_COURSE_SEARCH_URL: 'http://api.edu-kuban.ru/courses'
