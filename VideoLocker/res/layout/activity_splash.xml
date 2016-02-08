@@ -2,22 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white" >
+    android:background="@drawable/launch_background" >
  
     <ImageView android:contentDescription="@string/app_name"
-        android:id="@+id/backgroundLogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@drawable/edx_map" />
-    
-    <ImageView android:contentDescription="@string/app_name"
-        android:id="@+id/edxLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@drawable/edx_logo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp" />
-
+        android:layout_centerInParent="true"/>
 </RelativeLayout>
