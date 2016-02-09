@@ -1,8 +1,8 @@
-API_HOST_URL: 'http://api.edu-kuban.ru'
+API_HOST_URL: 'https://lms.edu-kuban.ru'
 ENVIRONMENT_DISPLAY_NAME: 'edu-kuban.ru'
 PLATFORM_NAME: 'СДО Кубани'
 PLATFORM_DESTINATION_NAME: 'cms.edu-kuban.ru'
 FEEDBACK_EMAIL_ADDRESS: 'egor@akulovs.com'
 COURSE_ENROLLMENT:
-    ENABLED: true
-    EXTERNAL_COURSE_SEARCH_URL: 'http://api.edu-kuban.ru/courses'
+    ENABLED: false
+    COURSE_SEARCH_URL: 'https://lms.edu-kuban.ru/courses?type=mobile'
