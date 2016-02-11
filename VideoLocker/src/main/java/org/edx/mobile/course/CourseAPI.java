@@ -31,7 +31,7 @@ public class CourseAPI {
     public
     @NonNull
     CourseList getCourseList(int page) throws RetroHttpException {
-        return courseService.getCourseList(getUsername(), true, page);
+        return courseService.getCourseList(null, /* EGOR getUsername(),*/ true, page);
     }
 
     public
@@ -39,7 +39,7 @@ public class CourseAPI {
     CourseDetail getCourseDetail(@NonNull String courseId) throws RetroHttpException {
         // Empty courseId will return a 200 for a list of course details, instead of a single course
         if (TextUtils.isEmpty(courseId)) throw new IllegalArgumentException();
-        return courseService.getCourseDetail(courseId, getUsername());
+        return courseService.getCourseDetail(courseId, null /* EGOR getUsername()*/ );
     }
 
     @Nullable

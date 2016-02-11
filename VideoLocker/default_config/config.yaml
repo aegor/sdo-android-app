@@ -3,6 +3,20 @@ ENVIRONMENT_DISPLAY_NAME: 'edu-kuban.ru'
 PLATFORM_NAME: 'СДО Кубани'
 PLATFORM_DESTINATION_NAME: 'cms.edu-kuban.ru'
 FEEDBACK_EMAIL_ADDRESS: 'egor@akulovs.com'
+ZERO_RATING:
+   ENABLED: false
+   CARRIERS: ["63514"]
+   WHITE_LIST_OF_DOMAINS: ["edu-kuban.ru",
+     "cms.edu-kuban.ru",
+     "lms.edu-kuban.ru",
+     "api.edu-kuban.ru",
+     "ssl.google-analytics.com",
+     "e.crashyltics.com",
+     "settings.crashlytics.com",
+     "mobile-collector.newrelic.com",
+     "www.google-analytics.com",
+     "android.clients.google.com",
+     "cdn.optimizely.com"]
 COURSE_ENROLLMENT:
     ENABLED: false
     COURSE_SEARCH_URL: 'https://lms.edu-kuban.ru/courses?type=mobile'

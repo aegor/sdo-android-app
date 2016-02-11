@@ -52,11 +52,13 @@ public class OkHttpUtil {
         builder.cache(cache);
         List<Interceptor> interceptors = builder.interceptors();
         interceptors.add(new JsonMergePatchInterceptor());
+/* EGOR
         interceptors.add(new UserAgentInterceptor(
                 System.getProperty("http.agent") + " " +
                         context.getString(R.string.app_name) + "/" +
                         BuildConfig.APPLICATION_ID + "/" +
                         BuildConfig.VERSION_NAME));
+*/
         if (isOAuthBased) {
             interceptors.add(new OauthHeaderRequestInterceptor(context));
         }
