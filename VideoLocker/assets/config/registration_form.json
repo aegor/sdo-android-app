@@ -9,11 +9,11 @@
       "required": true,
       "name": "email",
       "errorMessages": {},
-      "placeholder": "username@domain.com",
+      "placeholder": "username@edu-kuban.ru",
       "defaultValue": "",
       "instructions": "",
       "type": "email",
-      "label": "Email"
+      "label": "E-mail"
     },
     {
       "restrictions": {
@@ -24,9 +24,9 @@
       "errorMessages": {},
       "placeholder": "",
       "defaultValue": "",
-      "instructions": "This name appears on certificates you earn",
+      "instructions": "Имя для сертификатов",
       "type": "text",
-      "label": "Full name"
+      "label": "ФИО"
     },
     {
       "restrictions": {
@@ -38,9 +38,9 @@
       "errorMessages": {},
       "placeholder": "",
       "defaultValue": "",
-      "instructions": "This name identifies you in courses and <b>cannot be changed</b>",
+      "instructions": "Это имя <b>не может быть изменено позднее</b>",
       "type": "text",
-      "label": "Public username"
+      "label": "Имя пользователя"
     },
     {
       "restrictions": {
@@ -54,24 +54,24 @@
       "defaultValue": "",
       "instructions": "",
       "type": "password",
-      "label": "Password"
+      "label": "Пароль"
     },
     {
       "restrictions": {},
-      "required": true,
+      "required": false,
       "name": "country",
       "errorMessages": {
-        "required": "Please select your Country."
+        "required": "Выберите страну"
       },
       "placeholder": "",
-      "defaultValue": "",
+      "defaultValue": "RU",
       "instructions": "",
       "type": "select",
       "options": [
         {
           "default": true,
-          "name": "--",
-          "value": ""
+          "name": "RU",
+          "value": "Российская федерация"
         },
         {
           "name": "Российская федерация",
@@ -100,15 +100,15 @@
           "value": ""
         },
         {
-          "name": "Male",
+          "name": "Мужской",
           "value": "m"
         },
         {
-          "name": "Female",
+          "name": "Женский",
           "value": "f"
         }
       ],
-      "label": "Gender"
+      "label": "Пол"
     },
     {
       "restrictions": {},
@@ -524,89 +524,9 @@
         {
           "name": "1916",
           "value": "1916"
-        },
-        {
-          "name": "1915",
-          "value": "1915"
-        },
-        {
-          "name": "1914",
-          "value": "1914"
-        },
-        {
-          "name": "1913",
-          "value": "1913"
-        },
-        {
-          "name": "1912",
-          "value": "1912"
-        },
-        {
-          "name": "1911",
-          "value": "1911"
-        },
-        {
-          "name": "1910",
-          "value": "1910"
-        },
-        {
-          "name": "1909",
-          "value": "1909"
-        },
-        {
-          "name": "1908",
-          "value": "1908"
-        },
-        {
-          "name": "1907",
-          "value": "1907"
-        },
-        {
-          "name": "1906",
-          "value": "1906"
-        },
-        {
-          "name": "1905",
-          "value": "1905"
-        },
-        {
-          "name": "1904",
-          "value": "1904"
-        },
-        {
-          "name": "1903",
-          "value": "1903"
-        },
-        {
-          "name": "1902",
-          "value": "1902"
-        },
-        {
-          "name": "1901",
-          "value": "1901"
-        },
-        {
-          "name": "1900",
-          "value": "1900"
-        },
-        {
-          "name": "1899",
-          "value": "1899"
-        },
-        {
-          "name": "1898",
-          "value": "1898"
-        },
-        {
-          "name": "1897",
-          "value": "1897"
-        },
-        {
-          "name": "1896",
-          "value": "1896"
         }
       ],
-      "label": "Year of birth"
+      "label": "Год рождения"
     },
     {
       "restrictions": {},
@@ -624,43 +544,43 @@
           "value": ""
         },
         {
-          "name": "Doctorate",
+          "name": "Научная степень",
           "value": "p"
         },
         {
-          "name": "Master's or professional degree",
+          "name": "Магистр",
           "value": "m"
         },
         {
-          "name": "Bachelor's degree",
+          "name": "Бакалавр",
           "value": "b"
         },
         {
-          "name": "Associate's degree",
+          "name": "Студент",
           "value": "a"
         },
         {
-          "name": "Secondary/high school",
+          "name": "Среднее (полное) образование",
           "value": "hs"
         },
         {
-          "name": "Junior secondary/junior high/middle school",
+          "name": "Учащийся",
           "value": "jhs"
         },
         {
-          "name": "Elementary/primary school",
+          "name": "Начальная школа",
           "value": "el"
         },
         {
-          "name": "None",
+          "name": "Нет",
           "value": "none"
         },
         {
-          "name": "Other",
+          "name": "Другое",
           "value": "other"
         }
       ],
-      "label": "Highest level of education completed"
+      "label": "Уровень образования"
     },
     {
       "restrictions": {},
@@ -671,7 +591,7 @@
       "defaultValue": "",
       "instructions": "",
       "type": "textarea",
-      "label": "Mailing address"
+      "label": "Домашний адрес"
     },
     {
       "restrictions": {},
@@ -682,24 +602,24 @@
       "defaultValue": "",
       "instructions": "",
       "type": "textarea",
-      "label": "Tell us why you're interested in edX"
+      "label": "Почему вам интересно СДО Кубани?"
     },
     {
       "restrictions": {},
       "required": true,
       "name": "honor_code",
       "errorMessages": {
-        "required": "You must agree to the edX <a href=\"https://www.edx.org/terms\">Terms of Service and Honor Code</a>."
+        "required": "Примите условия оказания услуг."
       },
       "agreement": {
         "url": "edxapp://show_eula",
-        "text": "edX Terms of Service and Honor Code"
+        "text": "Условия оказания услуг СДО Кубани"
       },
       "placeholder": "",
       "defaultValue": false,
       "instructions": "",
       "type": "checkbox",
-      "label": "I agree to the edX <a href=\"https://www.edx.org/terms\">Terms of Service and Honor Code</a>."
+      "label": "Разрешить обработку персональных данных."
     }
   ],
   "method": "post"
