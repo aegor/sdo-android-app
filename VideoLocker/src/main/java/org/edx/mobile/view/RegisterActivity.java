@@ -115,6 +115,7 @@ public class RegisterActivity extends BaseFragmentActivity
         requiredFieldsLayout = (LinearLayout) findViewById(R.id.required_fields_layout);
         optionalFieldsLayout = (LinearLayout) findViewById(R.id.optional_fields_layout);
         agreementLayout = (LinearLayout) findViewById(R.id.layout_agreement);
+        /* EGOR
         final TextView optional_text=(TextView)findViewById(R.id.optional_field_tv);
         optional_text.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,7 +129,7 @@ public class RegisterActivity extends BaseFragmentActivity
                     optional_text.setText(getString(R.string.hide_optional_text));
                 }
             }
-        });
+        });*/
 
         View closeButton = findViewById(R.id.actionbar_close_btn);
         if(closeButton!=null){

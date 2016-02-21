@@ -494,8 +494,6 @@
   <string name="find_course_text">Ищете что-то новое и интересное?</string>
   <!--Button label to bring up course finder-->
   <string name="find_course_btn_text">Найти курс, совместимый с мобильными устройствами</string>
-  <!-- Button label to bring up course finder -->
-  <string name="signin_with_text">войти в приложение с помощью</string>
   <!--Message between sign in button and social login buttons-->
   <string name="signin_with_text">Или войти в аккаунт</string>
   <!--Facebook login method-->
