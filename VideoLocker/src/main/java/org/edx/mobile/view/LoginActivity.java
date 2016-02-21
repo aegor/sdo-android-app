@@ -63,7 +63,6 @@ public class LoginActivity extends BaseFragmentActivity implements SocialLoginDe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        overridePendingTransition(R.anim.slide_in_from_bottom, R.anim.no_transition);
 
         hideSoftKeypad();
 
@@ -345,8 +344,7 @@ public class LoginActivity extends BaseFragmentActivity implements SocialLoginDe
 
     public void showEulaDialog() {
         clearDialogs();
-        showWebDialog(getString(R.string.eula_file_link),
-                getString(R.string.end_user_title));
+        environment.getRouter().showWebViewDialog(this, getString(R.string.eula_file_link), getString(R.string.end_user_title));
     }
 
     public void showResetFailure(String text) {
@@ -472,14 +470,6 @@ public class LoginActivity extends BaseFragmentActivity implements SocialLoginDe
             logger.error(ex);
         }
     }
-
-
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(R.anim.no_transition, R.anim.slide_out_to_bottom);
-    }
-
 
     @Override
     public boolean tryToSetUIInteraction(boolean enable) {

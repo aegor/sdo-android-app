@@ -99,27 +99,11 @@ public interface ISegment {
      */
     void setTracker(ISegmentTracker tracker);
     
-    Properties trackUserCellConnection(String carrierName, boolean isZeroRated);
-
     Properties trackUserConnectionSpeed(String connectionType, float connectionSpeed);
-
-    Properties courseGroupAccessed(String courseId);
-
-    Properties gameGroupAccessed(long groupID, int groupUserCount);
-
-    Properties groupCreated(long groupID, int invitedUserCount);
-
-    Properties groupInvited(long groupID, int invitedUserCount);
-
-    Properties courseShared(String courseId, String socialNetwork);
 
     Properties certificateShared(@NonNull String courseId, @NonNull String certificateUrl, @NonNull ShareUtils.ShareType shareType);
 
     Properties courseDetailShared(@NonNull String courseId, @NonNull String aboutUrl, @NonNull ShareUtils.ShareType shareType);
-
-    Properties socialConnectionEvent(boolean connected, String socialNetwork);
-
-    Properties coursesVisibleToFriendsChange(boolean visible);
 
     Properties trackCourseOutlineMode(boolean isVideoMode);
 
@@ -169,13 +153,7 @@ public interface ISegment {
         String CONNECTION_TYPE = "connection_type";
         String CONNECTION_SPEED = "connection_speed";
 
-        String GROUP_ID = "group_id";
-        String GROUP_USER_COUNT = "group_user_count";
-        String GROUP_INVITED_USER_COUNT = "group_invited_count";
-        String SOCIAL_NETWORK = "social_network";
         String TYPE = "type";
-        String SOCIAL_CONNECTION_STATE = "social_connection_state";
-        String SETTING_COURSES_VISIBLE_STATE = "settings_courses_visible_state";
         String CATEGORY = "category";
         String LABEL = "label";
         String ACTION = "action";
@@ -228,15 +206,8 @@ public interface ISegment {
         String NOTIFICATION_RECEIVED = "edx.bi.app.notification.course.update.received";
         String NOTIFICATION_TAPPED = "edx.bi.app.notification.course.update.tapped";
 
-        String ACCESS_COURSE_GROUP = "edx.bi.app.groups.course_access";
-        String ACCESS_GAME_GROUP = "edx.bi.app.groups.game_access";
-        String CREATE_GAME_GROUP = "edx.bi.app.groups.game_create";
-        String INVITE_GAME_GROUP = "edx.bi.app.groups.game_invite";
-        String SOCIAL_COURSE_SHARED = "edx.bi.app.social.course_share";
         String SOCIAL_CERTIFICATE_SHARED = "edx.bi.app.certificate.shared";
         String SOCIAL_COURSE_DETAIL_SHARED = "edx.bi.app.course.shared";
-        String SOCIAL_CONNECTION_CHANGE = "edx.bi.app.social.connection";
-        String SETTING_COURSES_VISIBLE_CHANGE = "edx.bi.app.user.share_courses";
 
         String NAVIGATION = "navigation";
         String SOCIAL_SHARING = "social-sharing";
@@ -269,19 +240,14 @@ public interface ISegment {
         String SECTION_OUTLINE = "Section Outline";
         String UNIT_DETAIL = "Unit Detail";
         String CERTIFICATE = "Certificate";
-        String CREATE_GAME_GROUPS = "Create Games Group";
         String DOWNLOADS = "Downloads";
         String FIND_COURSES = "Find Courses";
-        String FRIENDS_IN_COURSE = "Friends In This Course";
-        String GROUP_LIST = "Group List";
         String LOGIN = "Login";
         String MY_VIDEOS = "My Videos";
         String MY_VIDEOS_ALL = "My Videos - All Videos";
         String MY_VIDEOS_RECENT = "My Videos - Recent Videos";
         String MY_COURSES = "My Courses";
-        String MY_FRIENDS_COURSES = "My Friends' Courses";
         String SETTINGS = "Settings";
-        String SOCIAL_FRIEND_PICKER = "Social Friend Picker";
     }
 
     interface Events {
@@ -305,17 +271,9 @@ public interface ISegment {
         String FIND_COURSES = "Find Courses Clicked";
         String CREATE_ACCOUNT_CLICKED = "Create Account Clicked";
         String ENROLL_COURSES = "Enroll Course Clicked";
-        String TRACK_CELL_CONNECTION = "Cell Connection Established";
         String SPEED = "Connected Speed Report";
-        String COURSE_GROUP_ACCESSED = "Course Group Accessed";
-        String GAME_GROUP_ACCESSED = "Game Group Accessed";
-        String GAME_GROUP_CREATE = "Game Group Created";
-        String GAME_GROUP_INVITE = "Game Group Invited";
-        String SOCIAL_COURSE_SHARED = "Social Course Shared";
         String SOCIAL_CERTIFICATE_SHARED = "Shared a certificate";
         String SOCIAL_COURSE_DETAIL_SHARED = "Shared a course";
-        String SOCIAL_CONNECTION_CHANGE = "Social Connection Change";
-        String SETTING_COURSES_VISIBLE_CHANGE = "Settings Courses Visibility Change";
         String SWITCH_OUTLINE_MODE = "Switch outline mode";
         String COMPONENT_VIEWED = "Component Viewed";
         String OPEN_IN_BROWSER = "Browser Launched";

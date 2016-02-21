@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.TaskStackBuilder;
 
 import com.google.inject.Inject;
@@ -25,6 +24,7 @@ import org.edx.mobile.module.notification.NotificationDelegate;
 import org.edx.mobile.module.prefs.PrefManager;
 import org.edx.mobile.util.AppConstants;
 import org.edx.mobile.util.Config;
+import org.edx.mobile.view.dialog.WebViewDialogActivity;
 
 import de.greenrobot.event.EventBus;
 
@@ -66,21 +66,14 @@ public class Router {
         sourceActivity.startActivity(myVideosIntent);
     }
 
-    public void showMyGroups(Activity sourceActivity) {
-        Intent myGroupsIntent = new Intent(sourceActivity, MyGroupsListActivity.class);
-        myGroupsIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        sourceActivity.startActivity(myGroupsIntent);
-    }
-
     public void showSettings(Activity sourceActivity) {
         Intent settingsIntent = new Intent(sourceActivity, SettingsActivity.class);
         settingsIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         sourceActivity.startActivity(settingsIntent);
     }
 
-    public void showLaunchScreen(Context context, boolean overrideAnimation) {
+    public void showLaunchScreen(Context context) {
         Intent launchIntent = new Intent(context, LaunchActivity.class);
-        launchIntent.putExtra(LaunchActivity.OVERRIDE_ANIMATION_FLAG, overrideAnimation);
         if (context instanceof Activity)
             launchIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         else
@@ -101,14 +94,7 @@ public class Router {
     }
 
     public void showMyCourses(Activity sourceActivity) {
-        Intent intent = new Intent(sourceActivity, MyCoursesListActivity.class);
-        /*
-        Using CLEAR_TOP flag, causes the activity to be re-created every time.
-        This reloads the list of courses. We don't want that.
-        Using REORDER_TO_FRONT solves this problem
-         */
-        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-        sourceActivity.startActivity(intent);
+        sourceActivity.startActivity(MyCoursesListActivity.newIntent());
 
         // let login screens be ended
         Intent loginIntent = new Intent();
@@ -289,7 +275,7 @@ public class Router {
 
         delegate.unsubscribeAll();
 
-        showLaunchScreen(context, true);
+        showLaunchScreen(context);
         showLogin(context);
     }
 
@@ -330,5 +316,9 @@ public class Router {
         //Add this flag as multiple activities need to be created
         findCoursesIntent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         context.startActivity(findCoursesIntent);
+    }
+
+    public void showWebViewDialog(@NonNull Activity activity, @NonNull String url, @Nullable String dialogTitle) {
+        activity.startActivity(WebViewDialogActivity.newIntent(activity, url, dialogTitle));
     }
 }

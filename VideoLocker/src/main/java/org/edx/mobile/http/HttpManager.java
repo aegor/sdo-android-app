@@ -221,6 +221,7 @@ public class HttpManager {
             post = new HttpPost(url);
         }
         AndroidHttpClient.modifyRequestToAcceptGzipResponse(post);
+        // EGOR
         post.setHeader("Content-Type", "application/json");
         // set request headers
         if (headers != null) {

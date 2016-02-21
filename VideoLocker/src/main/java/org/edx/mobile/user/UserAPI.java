@@ -5,28 +5,21 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.webkit.MimeTypeMap;
 
-import com.google.gson.FieldNamingPolicy;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
-import org.edx.mobile.discussion.RetroHttpExceptionHandler;
 import org.edx.mobile.event.ProfilePhotoUpdatedEvent;
 import org.edx.mobile.http.RetroHttpException;
 import org.edx.mobile.logger.Logger;
-import org.edx.mobile.util.Config;
-import org.edx.mobile.util.DateUtil;
+import org.edx.mobile.model.api.EnrolledCoursesResponse;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Collections;
+import java.util.List;
 
 import de.greenrobot.event.EventBus;
-import okhttp3.OkHttpClient;
 import retrofit.RestAdapter;
-import retrofit.client.OkClient;
-import retrofit.converter.GsonConverter;
 import retrofit.mime.TypedFile;
 
 @Singleton

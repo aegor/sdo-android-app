@@ -32,12 +32,12 @@ public interface IApi {
             throws Exception;
 
     AuthResponse auth(String username, String password)
-                    throws Exception;
+            throws Exception;
 
     ProfileModel getProfile() throws Exception;
 
     List<EnrolledCoursesResponse> getEnrolledCourses()
-                                                            throws Exception;
+            throws Exception;
 
     EnrolledCoursesResponse getCourseById(String courseId);
 
@@ -50,19 +50,7 @@ public interface IApi {
 
 
     String downloadTranscript(String url)
-                    throws Exception;
-
-    List<SocialMember> getFriendsInCourse(boolean preferCache, String courseId, String oauthToken) throws Exception;
-
-    boolean inviteFriendsToGroup(long[] toInvite, long groupId, String oauthToken) throws Exception;
-
-    long createGroup(String name, String description, boolean privacy, long adminId, String socialToken) throws Exception;
-
-    boolean setUserCourseShareConsent(boolean consent) throws Exception;
-
-    boolean getUserCourseShareConsent() throws Exception;
-
-    List<SocialMember> getGroupMembers(boolean preferCache, long groupId) throws Exception;
+            throws Exception;
 
     AuthResponse loginByFacebook(String accessToken) throws Exception;
 
@@ -74,7 +62,7 @@ public interface IApi {
     SyncLastAccessedSubsectionResponse getLastAccessedSubsection(String courseId) throws Exception;
 
     RegisterResponse register(Bundle parameters)
-                                    throws Exception;
+            throws Exception;
 
     RegistrationDescription getRegistrationDescription() throws Exception;
 
@@ -87,12 +75,11 @@ public interface IApi {
         throws Exception;
 
     @Deprecated
-    Map<String, SectionEntry> getCourseHierarchy(String courseId, boolean preferCache)
-        throws Exception;
+    Map<String, SectionEntry> getCourseHierarchy(String courseId, boolean preferCache) throws Exception;
 
     @Deprecated
     ArrayList<SectionItemInterface> getLiveOrganizedVideosByChapter
-        (String courseId, String chapter);
+            (String courseId, String chapter);
 
     HttpManager.HttpResult getCourseStructure(HttpRequestDelegate delegate) throws Exception;
 }
