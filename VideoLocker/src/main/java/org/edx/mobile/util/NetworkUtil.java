@@ -34,7 +34,7 @@ public class NetworkUtil {
         if (infoWifi != null) {
             State wifi = infoWifi.getState();
             if (wifi == NetworkInfo.State.CONNECTED) {
-                logger.debug("Wifi is connected");
+                // EGOR logger.debug("Wifi is connected");
                 return true;
             }
         }
@@ -43,7 +43,7 @@ public class NetworkUtil {
         if (infoMobile != null) {
             State mobile = infoMobile.getState();
             if (mobile == NetworkInfo.State.CONNECTED) {
-                logger.debug("Mobile data is connected");
+                // EGOR logger.debug("Mobile data is connected");
                 return true;
             }
         }

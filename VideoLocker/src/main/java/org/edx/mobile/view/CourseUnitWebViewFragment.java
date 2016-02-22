@@ -261,7 +261,7 @@ public class CourseUnitWebViewFragment extends CourseUnitFragment {
             // Requery the session cookie if unavailable or expired if we are on
             // an API level lesser than Marshmallow (which provides HTTP error
             // codes in the error callback for WebViewClient).
-            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M &&
+            if (/* EGOR Build.VERSION.SDK_INT < Build.VERSION_CODES.M && */
                     EdxCookieManager.getSharedInstance().isSessionCookieMissingOrExpired()) {
                 EdxCookieManager.getSharedInstance().tryToRefreshSessionCookie();
             } else {
